@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  color: #333;
+  background: #fff;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 15px 30px;
+  border-bottom: 1px solid #eee;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.search {
+  flex: 1;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+}
+
+.nav {
+  display: flex;
+  gap: 15px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+/* HERO SECTION */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 60px 40px;
+  align-items: center;
+}
+
+.hero-text h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.hero-text button {
+  margin-top: 25px;
+  padding: 12px 25px;
+  border: none;
+  background: #0f3d3e;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.img-box {
+  background: #eee;
+  height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #777;
+}
+
+/* FEATURES */
+.features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  padding: 40px;
+  background: #f8f8f8;
+  font-size: 14px;
+}
+
+/* PRODUCTS */
+.products {
+  padding: 50px 40px;
+}
+
+.products h2 {
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  text-align: center;
+}
+
+.card h3 {
+  font-size: 16px;
+  margin: 15px 0 8px;
+}
+
+.price {
+  font-weight: bold;
+}
+
+.old {
+  text-decoration: line-through;
+  color: #888;
+  margin-left: 8px;
+}
+
+.center-btn {
+  display: block;
+  margin: 40px auto 0;
+  padding: 12px 30px;
+  background: #0f3d3e;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* FOOTER */
+.footer {
+  background: #0f3d3e;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 60px;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+
+  /* HEADER */
+  .nav {
+    display: none;
+  }
+
+  .header {
+    flex-wrap: wrap;
+  }
+
+  .search {
+    width: 100%;
+  }
+
+  /* HERO */
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .hero-text h1 {
+    font-size: 28px;
+  }
+
+  /* FEATURES */
+  .features {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  /* PRODUCTS */
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+}
