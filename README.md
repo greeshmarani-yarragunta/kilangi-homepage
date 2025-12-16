@@ -14,7 +14,7 @@ This project is a responsive frontend implementation of the Kilangi Jewellery ho
 - Vanilla JavaScript
 
 ## Live Demo
-(Will be added after deployment)
+https://earnest-sprinkles-6c2b05.netlify.app
 
 ## GitHub Repository
-(Will be added after pushing to GitHub)
+https://github.com/greeshmarani-yarragunta/kilangi-homepage
